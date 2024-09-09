@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="box">
+                <input type="text" id="username" name="username" placeholder="Username"> 
+                <input type="password" id="password" name="password" placeholder="Password">
+                
+                <button type="button" onclick="login()">Login</button>  
+                <p>Not registered? <a href="">Create an account</a></p>  
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+        
+            console.log("Username: " + username);
+            console.log("Password: " + password);
+        }
+    </script>
+</body>
+</html>
